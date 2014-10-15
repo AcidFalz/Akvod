@@ -1,0 +1,240 @@
+body {
+    width: 900px;
+    margin:0 auto;
+}
+
+li {
+    list-style-type: none;
+}
+
+.pomestit_po_centru {
+    margin: 75px auto ;
+
+}
+
+.pomestit_sleva {
+    float: left;
+}
+
+.pomestit_sprava {
+    float: right;
+}
+
+.punkt_menu {
+    border-bottom-style: solid;
+    border-bottom-color: white;
+    border-bottom-width: 3px;
+
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.punkt_menu:hover {
+    border-bottom-color: green;
+}
+
+.punkt_stroki_navigatsii{
+    display: inline-block;
+}
+
+#stroka_navigatsii {
+    width: auto;
+    margin: 0 auto 0 220px;
+    padding-bottom: 5px;
+}
+
+.error_massage {
+    color: red;
+}
+
+.otstupit_nemnogo_ot_krayov{
+    margin: 30px 30px;
+}
+
+
+.noselect {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+         -o-user-select: none;
+            user-select: none;
+
+}
+
+.noselect:hover {
+    cursor: default;
+}
+
+.zagolovok_admin_stranitsi {
+    font-size: 35pt;
+    display: inline-block;
+    margin: 20px;
+    line-height: 90%;
+    font-family: Helvetica, sans-serif;
+
+}
+
+
+
+#titulnaya_tablitsa {
+    border-top: 2px solid midnightblue;
+}
+
+.snoska_sprava {
+    display: inline-block;
+    position: relative;
+    float: right;
+    width: 150px;
+}
+
+li.punkt_formi{
+    margin-top: 10px;
+}
+
+#yacheyka_vyvoda_menu {
+width: 220px;
+height: 450px;
+vertical-align: top;
+border-right: 2px solid black;
+    }
+
+#vsplivayuschee_okno{
+    display: none;
+    position: fixed;
+    width: 600px;
+    height: auto;
+    border: 1px solid grey;
+    background: white;
+    padding: 20px;
+    margin-top: -50px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.knopka_krestik_zakrit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-bottom: 1px solid grey;
+    border-left: 1px solid grey;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 2px 4px;
+}
+
+.okno_podskazki {
+    display: block;
+    position: fixed;
+    width: 360px;
+    height: auto;
+    border: 1px solid grey;
+    background: lightyellow;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    margin-top: -10px;
+    margin-left: -430px;
+}
+
+li.punkt_instruktsii {
+    list-style-type:decimal;
+    margin-bottom: 5px;
+}
+
+
+
+
+.stroka_istorii_zakaza {
+    text-align: center;
+}
+
+.tekst_po_centru {
+    text-align: center;
+}
+
+.tekst_sleva {
+    text-align: left;
+}
+
+.tekst_sprava {
+    text-align: right;
+}
+
+.yacheyka_tablitsi_zakazi {
+    padding: 5px;
+}
+
+.zagolovok_spiska {
+    font-size: 16pt;
+    padding: 20px 20px 10px 0;
+}
+
+.strong{
+    font-size: 16pt;
+}
+
+
+#shapka_spiska {
+    border-bottom: 2px solid black;
+}
+
+#yacheyka_vyvoda_stranitsi_id {
+    width: 680px;
+    vertical-align: top;
+}
+
+#forma_avtorizatsii {
+    width: 400px;
+    height: 250px;
+    margin: 100px auto;
+    border: 1px solid black;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+
+}
+
+.forma_v_adminke {
+    background-color: lightgrey;
+    padding: 20px;
+    margin: 10px;
+}
+
+.zagolovok_bloka {
+    margin-bottom: 7px;
+    display: block;
+    font-size: 13pt;
+}
+
+.yacheyka_s_formoy {
+    vertical-align: text-top;
+}
+
+.pole_formi_s_nadpisyu {
+    margin-bottom: 5px;
+}
+
+.knopka_sohranit {
+    width: 90px;
+    height: 30px;
+}
+
+#knopka_voyti {
+    float: right;
+}
+
+.knopka_Ok {
+    width: 70px;
+    height: 30px;
+    margin-top: 20px;
+
+}
+
+
+#tablitsa_formi_avtorizatsii {
+margin: 38px auto;
+width: 320px;
+    }
+
+
+#startovaya_kartinka_adminki {
+    margin: 20px 0 0 150px;
+
+}

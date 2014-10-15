@@ -1,0 +1,353 @@
+@charset "utf-8";
+
+body {
+    width: 850px;
+    margin:0 auto;
+}
+
+a img {
+    border: none; /* Убираем рамку */
+   }
+
+p {
+   text-indent: 1.5em; /* Отступ первой строки */
+   text-align: justify; /* Выравнивание по ширине */
+  }
+
+.pomestit_po_centru {
+    margin: 75px auto ;
+    width: 450px;
+    height: 100px;
+}
+
+.tablePage {
+    width: 800px;
+}
+
+.yacheyka_s_formoy {
+    vertical-align: text-top;
+}
+
+.tsena {
+    margin-left: 100px;
+}
+
+.pomestit_sleva {
+    float: left;
+}
+
+.pomestit_sprava {
+    float: right;
+
+}
+
+.osnovnie_kartinki {
+    margin-top: 20px;
+
+
+}
+
+.podsolnuh_v_lichnom_kabinete {
+    margin-top: -173px;
+}
+
+#kartinka_smorodinki {
+    margin: 0;
+}
+
+.zagolovok_stranitsi {
+    font-size: 30pt;
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: -3px;
+    line-height: 90%;
+    font-family: Helvetica, sans-serif;
+
+}
+
+.zagolovok_stranitsi_pomenshe {
+    font-size: 25pt;
+    display: inline-block;
+    margin-left: 12px;
+    line-height: 90%;
+    font-family: Helvetica, sans-serif;
+
+}
+
+.razdelitel {
+    display: block;
+    margin: 0 auto 0 auto;
+}
+
+.glavnoe_menu {
+    width: 850px;
+}
+
+.ssilka_v_punkte_menyu {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-family: Helvetica, sans-serif;
+}
+
+.knopka_ssilka {
+    display: inline-block;
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 14pt;
+    line-height: 80%;
+    font-family: Helvetica, sans-serif;
+
+}
+.knopka_ssilka:hover {
+    text-shadow: 0 0 1px grey;
+}
+
+.knopka_ssilka:link {
+    color: black;
+}
+
+.knopka_ssilka:visited {
+    color: black;
+}
+
+.knopka_glavnoe_menu {
+    display: inline-block;
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+    margin: 0 11px 14px 11px;
+    font-weight: bold;
+    font-size: 25pt;
+    line-height: 90%;
+
+}
+.knopka_glavnoe_menu:hover {
+    text-shadow: 0 0 3px grey;
+}
+
+.knopka_glavnoe_menu:link {
+    color: black;
+}
+
+.knopka_glavnoe_menu:visited {
+    color: black;
+}
+
+#nazvanie_sayta {
+    font-size: 140px;
+    margin-left: 50px;
+
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+         -o-user-select: none;
+            user-select: none;
+
+}
+
+.noselect:hover {
+    cursor: default;
+}
+
+#logo_sayta {
+    margin-bottom: -45px;
+    margin-left: 30px;
+}
+
+
+
+.panel_menu {
+    width: 250px;
+    vertical-align: top;
+    padding-left: 40px;
+}
+
+
+.pole-yacheyka_otobrazhenie_statyi {
+    vertical-align: top;
+    width: 550px;
+}
+
+.punkt_menu_wiki {
+    display: table;
+    padding: 5px;
+    border-width: 5px;
+
+}
+
+.punkt_menu_wiki:hover {
+    border-bottom-color: blue;
+}
+
+.miniatura_novosti {
+
+    float: left;
+    margin: 5px;
+}
+
+.miniatura_tovara {
+    float: left;
+    margin: 5px;
+    width: 120px;
+}
+
+.small_pic_nosti {
+    float: left;
+    margin: 15px;
+    width: 300px;
+}
+
+.zagolovok_novosti {
+    font-size: 16pt;
+    padding: 20px 20px 10px 0;
+    display: block;
+
+}
+
+.forma_avtorizatsii {
+    display: block;
+    float: left;
+    margin: 10px -40px 0 20px;
+
+}
+
+.lenta_tovarov {
+    vertical-align: top;
+    width: 550px;
+}
+
+.korzina {
+    vertical-align: top;
+    width: 296px;
+}
+
+.tovar_v_lente {
+
+    margin: 10px;
+    padding: 5px;
+    border-width: 5px;
+    height: 130px;
+    width: 500px;
+}
+
+.skritoe_pole_vvoda {
+    visibility: hidden;
+}
+
+a.krestik_udalit {
+    color: red;
+    text-decoration: none;
+}
+
+/* Всплывающее окно с составом заказа*/
+#divokno {
+    position: fixed;
+    width: 600px;
+    height: auto;
+    border: 1px solid grey;
+    background: white;
+    display: none;
+    padding: 20px;
+    text-align: center;
+    margin-top: -200px;
+    margin-left: -50px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+
+}
+
+.otstupit_nemnogo_sleva{
+    padding-left: 30px;
+}
+
+
+
+.knopka_Ok {
+    width: 70px;
+    height: 30px;
+    float: right;
+    margin-top: 20px;
+
+}
+
+.stroka_istorii_zakaza {
+    text-align: center;
+}
+
+.tekst_po_centru {
+    text-align: center;
+}
+
+.tekst_sleva {
+    text-align: left;
+}
+
+.tekst_sprava {
+    text-align: right;
+}
+
+.yacheyka_tablitsi_zakazi {
+    padding: 5px;
+}
+
+/* Кнопка закрывания для окна с составом заказа */
+.knopka_krestik_zakrit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-bottom: 1px solid grey;
+    border-left: 1px solid grey;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 2px 4px;
+ }
+
+.abzats_kontakty {
+    text-align: center;
+    padding: 20px;
+}
+
+
+.cyrilic {
+ list-style-type: none; /* Прячем исходную нумерацию */
+}
+
+.cyrilic li::before {
+ margin-right: 14px; /* Расстояние от буквы до текста */
+ margin-left: -30px;
+ width: 1em; /* Ширина */
+ text-align: right; /* Выравнивание по правому краю */
+ display: inline-block; /* Строчно-блочный элемент */
+}
+
+.cyrilic li:nth-child(1)::before { content: 'а)'; }
+.cyrilic li:nth-child(2)::before { content: 'б)'; }
+.cyrilic li:nth-child(3)::before { content: 'в)'; }
+.cyrilic li:nth-child(4)::before { content: 'г)'; }
+.cyrilic li:nth-child(5)::before { content: 'д)'; }
+.cyrilic li:nth-child(6)::before { content: 'е)'; }
+.cyrilic li:nth-child(7)::before { content: 'ё)'; }
+.cyrilic li:nth-child(8)::before { content: 'ж)'; }
+.cyrilic li:nth-child(9)::before { content: 'з)'; }
+.cyrilic li:nth-child(10)::before { content: 'и)'; }
+
+.spisok_v_statie {
+    padding-bottom: 6px;
+}
+
+.vynoska {
+    position: absolute;
+    display: block;
+    width: 180px;
+    color: black;
+    padding: 10px;
+    margin-left: -230px;
+    background: #ffff99;
+    border-radius: 20px;
+}

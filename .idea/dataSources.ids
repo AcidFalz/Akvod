@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source source="LOCAL" name="Data Source" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="fc201003-c398-4505-9a95-bd0d37f80d69">
+    <synchronize>true</synchronize>
+    <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+    <jdbc-url>jdbc://mysql.hostinger.com.ua/u827911637_akvod</jdbc-url>
+    <user-name>u827911637_akvod</user-name>
+    <user-password>dfdedfcfdfc7dfdadfc5dfd9df9bdf92</user-password>
+    <libraries>
+      <library>
+        <url>jar://$PROJECT_DIR$/../../../../../Install/Web-разработка/HTML и CSS редакторы/WebStorm/mysql-connector-java-5.1.26-bin.jar!/</url>
+      </library>
+      <library>
+        <url>file://$PROJECT_DIR$/../../../../../Install/Web-разработка/HTML и CSS редакторы/WebStorm/mysql-connector-license.txt</url>
+      </library>
+    </libraries>
+  </data-source>
+</component>
