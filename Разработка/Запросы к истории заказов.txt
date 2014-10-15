@@ -1,0 +1,55 @@
+select `data_zakaza` from Zakazi_table where id_pokupatelya=56;
+
+
+#выбирает дату заказа и состояние заказа
+SELECT t1.`data_zakaza` , t2.`naimenovanie_statusa` 
+FROM Zakazi_table AS t1
+JOIN Vozmozhnie_statusi_zakaza_table AS t2 ON t1.id_statusa_zakaza = t2.id_statusa
+WHERE t1.id_pokupatelya =56
+LIMIT 0 , 30
+
+
+
+#выбирает сумму по конкретному заказу
+SELECT sum(t1.kolichestvo_shtuk_tovara_v_zakaze*t2.tsena) 
+FROM `Sostav_zakaza_table` as t1 
+join Tovari_table as t2 on t1.id_tovara=t2.id_tovara 
+WHERE t1.id_zakaza=52
+
+
+
+#выбирает перечень заказов по покупателю и сумму по каждому заказу
+SELECT t1.id_zakaza, sum(t2.kolichestvo_shtuk_tovara_v_zakaze*t3.tsena) 
+FROM Zakazi_table as t1 
+join Sostav_zakaza_table as t2 on t1.id_zakaza=t2.id_zakaza
+join Tovari_table as t3 on t2.id_tovara=t3.id_tovara 
+WHERE t1.id_pokupatelya=56
+group by t1.id_zakaza
+
+
+#Результирующий запрос, который выбирает номер, дату заказа, сумму заказа, состояние заказа по номеру покупателя
+SELECT 
+	t1.id_zakaza AS nomer_zakaza, 
+	t1.data_zakaza, 
+	SUM( t2.kolichestvo_shtuk_tovara_v_zakaze * t3.tsena ) AS summa_zakza, 
+	t4.naimenovanie_statusa AS status_zakaza
+FROM Zakazi_table AS t1
+JOIN Sostav_zakaza_table AS t2 ON t1.id_zakaza = t2.id_zakaza
+JOIN Tovari_table AS t3 ON t2.id_tovara = t3.id_tovara
+JOIN Vozmozhnie_statusi_zakaza_table AS t4 ON t1.id_statusa_zakaza = t4.id_statusa
+WHERE t1.id_pokupatelya =56
+GROUP BY t1.id_zakaza
+
+#Запрос, который выбирает номер, дату, покупателя, сумму, состояние и позволяет подсталять сложное условие
+SELECT t1.id_zakaza AS nomer_zakaza, 
+        t1.data_zakaza,
+        t5.naimenovanie_pokupatelya,
+        SUM( t2.kolichestvo_shtuk_tovara_v_zakaze * t3.tsena ) AS summa_zakaza, 
+        t4.naimenovanie_statusa AS status_zakaza
+        FROM Zakazi_table AS t1
+        JOIN Sostav_zakaza_table AS t2 ON t1.id_zakaza = t2.id_zakaza
+        JOIN Tovari_table AS t3 ON t2.id_tovara = t3.id_tovara
+        JOIN Vozmozhnie_statusi_zakaza_table AS t4 ON t1.id_statusa_zakaza = t4.id_statusa
+        join Pokupateli_table as t5 on t5.id_pokupatelya = t1.id_pokupatelya
+        WHERE 1 and 1 and t1.id_statusa_zakaza=1
+        GROUP BY t1.id_zakaza
